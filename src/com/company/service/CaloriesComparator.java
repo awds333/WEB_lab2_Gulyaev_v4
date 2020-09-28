@@ -4,6 +4,9 @@ import com.company.model.Vegetable;
 
 import java.util.Comparator;
 
+/**
+ * The type Calories comparator.
+ */
 public class CaloriesComparator implements Comparator<Vegetable> {
     @Override
     public int compare(Vegetable o1, Vegetable o2) {

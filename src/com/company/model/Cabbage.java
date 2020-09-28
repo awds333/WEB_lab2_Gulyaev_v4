@@ -1,5 +1,8 @@
 package com.company.model;
 
+/**
+ * The type Cabbage.
+ */
 public class Cabbage extends Vegetable {
     @Override
     public int getCalories() {

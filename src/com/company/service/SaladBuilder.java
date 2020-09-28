@@ -9,20 +9,40 @@ import java.util.Comparator;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
+/**
+ * The type Salad builder.
+ */
 public class SaladBuilder {
     private ArrayList<Vegetable> components = new ArrayList<>();
     private Log log;
 
+    /**
+     * With component salad builder.
+     *
+     * @param vegetable the vegetable
+     * @return the salad builder
+     */
     public SaladBuilder withComponent(Vegetable vegetable) {
         components.add(vegetable);
         return this;
     }
 
+    /**
+     * With log salad builder.
+     *
+     * @param log the log
+     * @return the salad builder
+     */
     public SaladBuilder withLog(Log log) {
         this.log = log;
         return this;
     }
 
+    /**
+     * Build salad.
+     *
+     * @return the salad
+     */
     public Salad build() {
         if (components.isEmpty())
             throw new RuntimeException("No components!");
